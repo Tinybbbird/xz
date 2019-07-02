@@ -21,7 +21,7 @@ router.post('/reg',function (req,res) {
 		return;
 	}
 	pool.query('INSERT INTO xz_user SET?',[obj],function(err,result){
-		res.send({code:201,msg:'reg suc'});
+		res.send({code:200,msg:'reg suc'});
 	});
 });
 module.exports=router;
